@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     async getTaglist() {
-      axios.get(
+     await axios.get(
           `http://www.xiongmaoyouxuan.com/api/tab/${this.$route.params.id}?start=0`
         )
         .then(({ data }) => {
